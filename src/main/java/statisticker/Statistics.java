@@ -1,9 +1,6 @@
 package statisticker;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
+import java.util.*;
 
 public class Statistics 
 {
@@ -20,11 +17,11 @@ public class Statistics
             s.min= Collections.min(numbers);
             s.max= Collections.max(numbers);
             Float sum=0.0f;
-            for(Float number:numbers){
-                sum+=number;
+            for(Float num:numbers){
+                sum+=num;
             }
             s.average=(Float)sum/numbers.size();
-
+            
         }
         return s;
 
