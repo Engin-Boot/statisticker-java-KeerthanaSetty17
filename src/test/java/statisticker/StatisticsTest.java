@@ -37,8 +37,8 @@ public class StatisticsTest
         //https://www.geeksforgeeks.org/nan-not-number-java/
         //Design the asserts here and implement accordingly.
         
-        Assert.assertTrue(s.average.isNaN());
-        Assert.assertTrue(s.min.isNaN());
-        Assert.assertTrue(s.max.isNaN());
+        assertEquals(s.min.isNaN(),true);
+        assertEquals(s.max.isNaN(),true);
+        assertEquals(s.average.isNaN(),true);
     }
 }
