@@ -2,6 +2,7 @@ package statisticker;
 
 import static org.junit.Assert.*;
 import jdk.nashorn.internal.AssertsEnabled;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 import java.util.List;
@@ -35,5 +36,9 @@ public class StatisticsTest
         //Float.NaN (not-a-number), as described in
         //https://www.geeksforgeeks.org/nan-not-number-java/
         //Design the asserts here and implement accordingly.
+        
+        Assert.assertTrue(s.average.isNaN());
+        Assert.assertTrue(s.min.isNaN());
+        Assert.assertTrue(s.max.isNaN());
     }
 }
